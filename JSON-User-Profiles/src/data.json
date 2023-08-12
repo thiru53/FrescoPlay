@@ -1,0 +1,48 @@
+{
+    "profiles": [
+        {
+            "id":1,
+            "name":"user_one",
+            "email_id":"userone@gmail.com",
+            "age":23,
+            "password":"userOne@123",
+            "educational_qualifications":[
+                "B.Sc", "MCA"
+            ],
+            "work_experience":2
+        },
+        {
+            "id":2,
+            "name":"user_two",
+            "email_id":"usertwo@gmail.com",
+            "age":34,
+            "password":"userOne@123",
+            "educational_qualifications":[
+                "B.Sc", "MBA"
+            ],
+            "work_experience":6
+        },
+        {
+            "id":3,
+            "name":"user_three",
+            "email_id":"userthree@gmail.com",
+            "age":26,
+            "password":"userOne@123",
+            "educational_qualifications":[
+                "B.E"
+            ],
+            "work_experience":4
+        },
+        {
+            "id":4,
+            "name":"user_four",
+            "email_id":"userfour@gmail.com",
+            "age":28,
+            "password":"userOne@123",
+            "educational_qualifications":[
+                "B.E", "M.E"
+            ],
+            "work_experience":4
+        }
+    ]
+}
