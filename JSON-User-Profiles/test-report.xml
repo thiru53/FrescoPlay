@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" name="C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\test\app.test.js" errors="0" package="C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\test\app.test.js" hostname="localhost" tests="17" failures="11" time="0.909" timestamp="2023-08-12T12:09:21">
+    <properties>
+    </properties>
+    <testcase classname="Checking the types of json" name="Checking the types of json" time="0">
+    </testcase>
+    <testcase classname="Retriving all the user profiles" name="Retriving all the user profiles" time="0">
+    </testcase>
+    <testcase classname="Retriving a single user by id" name="Retriving a single user by id" time="0">
+    </testcase>
+    <testcase classname="Retriving the users sorted in ascending order" name="Retriving the users sorted in ascending order" time="0">
+    </testcase>
+    <testcase classname="Retriving the users sorted in descending order" name="Retriving the users sorted in descending order" time="0">
+    </testcase>
+    <testcase classname="Adding a user profile" name="Adding a user profile" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m5[39m
+Received: [31m4[39m
+    at Object.&lt;anonymous&gt; (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\test\app.test.js:53:26)
+    at Promise.then.completed (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:66:9)
+    at run (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Adding a user profile with invalid age" name="Adding a user profile with invalid age" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m5[39m
+Received: [31m4[39m
+    at Object.&lt;anonymous&gt; (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\test\app.test.js:70:26)
+    at Promise.then.completed (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:66:9)
+    at run (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Adding a user profile with invalid email" name="Adding a user profile with invalid email" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m5[39m
+Received: [31m4[39m
+    at Object.&lt;anonymous&gt; (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\test\app.test.js:87:26)
+    at Promise.then.completed (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:66:9)
+    at run (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Adding a user profile with invalid password" name="Adding a user profile with invalid password" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m5[39m
+Received: [31m4[39m
+    at Object.&lt;anonymous&gt; (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\test\app.test.js:104:26)
+    at Promise.then.completed (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:66:9)
+    at run (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Updating a user profile" name="Updating a user profile" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m45[39m
+Received: [31m34[39m
+    at Object.&lt;anonymous&gt; (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\test\app.test.js:119:25)
+    at Promise.then.completed (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:66:9)
+    at run (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Updating a user profile with invalid age" name="Updating a user profile with invalid age" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m5[39m
+Received: [31m4[39m
+    at Object.&lt;anonymous&gt; (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\test\app.test.js:137:26)
+    at Promise.then.completed (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:66:9)
+    at run (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Updating a user profile with invalid email" name="Updating a user profile with invalid email" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m5[39m
+Received: [31m4[39m
+    at Object.&lt;anonymous&gt; (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\test\app.test.js:152:26)
+    at Promise.then.completed (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:66:9)
+    at run (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Updating a user profile with invalid password" name="Updating a user profile with invalid password" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m5[39m
+Received: [31m4[39m
+    at Object.&lt;anonymous&gt; (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\test\app.test.js:167:26)
+    at Promise.then.completed (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:66:9)
+    at run (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Updating a user profile with invalid id" name="Updating a user profile with invalid id" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m5[39m
+Received: [31m4[39m
+    at Object.&lt;anonymous&gt; (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\test\app.test.js:182:26)
+    at Promise.then.completed (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:66:9)
+    at run (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Deleting a user profile" name="Deleting a user profile" time="0">
+    </testcase>
+    <testcase classname="Deleting a user profile" name="Deleting a user profile" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32mundefined[39m
+Received: [31m{&quot;age&quot;: 28, &quot;educational_qualifications&quot;: [&quot;B.E&quot;, &quot;M.E&quot;], &quot;email_id&quot;: &quot;userfour@gmail.com&quot;, &quot;id&quot;: 4, &quot;name&quot;: &quot;user_four&quot;, &quot;password&quot;: &quot;userOne@123&quot;, &quot;work_experience&quot;: 4}[39m
+    at Object.&lt;anonymous&gt; (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\test\app.test.js:199:21)
+    at Promise.then.completed (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:66:9)
+    at run (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Deleting a user profile with invalid id" name="Deleting a user profile with invalid id" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m&quot;Invalid id&quot;[39m
+Received: [31mundefined[39m
+    at Object.&lt;anonymous&gt; (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\test\app.test.js:207:22)
+    at Promise.then.completed (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:66:9)
+    at run (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Administrator\IdeaProjects\FrescoPlay\JSON-User-Profiles\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>

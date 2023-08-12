@@ -1,0 +1,24 @@
+{
+  "name": "user-profiles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --forceExit"
+  },
+  "jest": {
+    "testResultsProcessor": "./node_modules/jest-junit-reporter"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.5.1",
+    "jest-junit-reporter": "^1.1.0",
+    "md5": "^2.3.0",
+    "validator": "^13.7.0"
+  }
+}
