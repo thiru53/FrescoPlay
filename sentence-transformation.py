@@ -27,7 +27,7 @@ def transform():
         special_count = len(special_chars);
         numeric_count = sum(1 for char in line if char.isdigit())
 
-        print(line);
+        print(line)
         print("Number of Special Characters:",special_count)
         print("Number of Numeric Values:",numeric_count)
 
