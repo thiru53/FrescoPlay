@@ -1,0 +1,30 @@
+<div ng-controller="mailBoxController" id="mailBoxController" class="container-fluid">
+    <h4 class="titleType">
+        {{titleType}}
+    </h4>
+    <div class="row card  mailboxRow" ng-repeat="records in mailBox">
+        <div class="row sizeInboxCard mailCard"  >
+
+            <div class="col-sm-10 infoBox" ng-click="showEmail(records._id)" >
+                <h5 ng-if="mailType=='inbox'">
+                    {{records.header.from}}
+                </h5>
+                <h5 ng-if="mailType!='inbox'">
+                    {{records.header.to}}
+                </h5>
+            </div>
+            <div class="col-sm-2 dateInbox">
+                {{records.header.date}}
+                <i class="material-icons hoverDelete" ng-click="deleteMessage(records._id)" style="color:red">delete</i>
+
+            </div>
+        </div>
+        <div class="row sizeInboxCard">
+            <div class="col-sm-5">
+                {{records.header.subject}}
+
+            </div>
+        </div>
+    </div>
+
+</div>

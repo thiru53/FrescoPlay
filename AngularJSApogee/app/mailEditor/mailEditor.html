@@ -1,0 +1,70 @@
+<div ng-controller="mailEditorController" class="container-fluid">
+    <br>
+    <div class="row">
+        <div class="col-sm-1">
+            <i class="material-icons" style="cursor:pointer" ng-click="goBack()">arrow_back</i>
+        </div>
+        <div class="col-sm-8">
+            <h4 ng-if="mailId!=-1">Draft</h4>
+            <h4 ng-if="mailId==-1">New Mail</h4>
+        </div>
+        <div class="col-sm-1" style="margin-right:-20px;" ng-if="mailId!=-1" >
+            <i class="material-icons" ng-click="deleteMessage()" style="cursor: pointer;">delete</i>
+        </div>
+        <div class="col-sm-1" style="margin-right:-40px" ng-if="mailId!=-1">
+            <i class="material-icons" style="cursor:pointer">reply</i>
+        </div>
+        <div class="col-sm-1" ng-if="mailId!=-1">
+            <i class="material-icons" style="cursor:pointer">forward</i>
+        </div>
+
+    </div>
+    <br>
+    <form name="senderForm">
+        <div class="row bottomRow">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" ng-model="formDataObj.to" placeholder="To" name="to"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            </div>
+        </div>
+        <div class="row bottomRow">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" ng-model="formDataObj.cc" placeholder="Cc">
+            </div>
+        </div>
+        <div class="row bottomRow">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" ng-model="formDataObj.bcc" placeholder="Bcc">
+            </div>
+        </div>
+        <div class="row bottomRow">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" ng-model="formDataObj.subject" name="subject"
+                    placeholder="Subject" required>
+            </div>
+        </div>
+        <div class="row bottomRow">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7">
+                <textarea class="form-control" rows=8 ng-model="formDataObj.messageBody" placeholder="Message">
+
+           </textarea>
+            </div>
+        </div>
+        <div class="row bottomRow">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6">
+                <button class="btn btn-dark" ng-click="saveDraft()">Save as draft</button>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn btn-primary" ng-click="send()"
+                    ng-disabled="senderForm.to.$invalid||senderForm.subject.$invalid">Send</button>
+            </div>
+
+        </div>
+    </form>
+</div>

@@ -1,0 +1,38 @@
+<nav class="navbar sideNav">
+  <ul class="navbar-nav">
+    <li class="btnCompose">
+      <button class="btn btn-primary" id="addBtn"  >
+        <a href="#!mailEditor/-1">
+        <div class="row addBtn">
+        <i class="material-icons iconS">add</i>
+        Compose
+        </div>
+      </a>
+      </button></li>
+    <li class="nav-item nav-link nSl" >
+      <a href="#!mailBox/inbox">
+      <div class="sideMenuItems row" ng-click="switchTitle(2)" >
+        <i class="material-icons iconS">inbox</i>
+        Inbox
+      </div>
+      </a>
+    </li>
+    <li class="nav-item nav-link nSl">
+        <a href="#!mailBox/draft">
+      <div class="sideMenuItems row" ng-click="switchTitle(2)">
+        <i class="material-icons iconS">drafts</i>
+        Draft
+      </div>
+      </a>
+    </li>
+    <li class="nav-item nav-link nSl">
+        <a href="#!mailBox/sent">
+      <div class="sideMenuItems row" ng-click="switchTitle(3)">
+        <i class="material-icons iconS">send</i>
+        Sent
+      </div>
+      </a>
+    </li>
+  </ul>
+
+</nav>

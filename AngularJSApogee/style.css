@@ -1,0 +1,123 @@
+
+body{
+
+}
+
+.searchInput{
+     
+}
+.headNav{
+color: white;
+border-width: 1px;
+border-color: rgba(0, 0, 0, 0.2);
+margin-bottom: 5px;
+border-bottom-style:solid ;
+padding-bottom: 1px;
+padding-top: 1px;
+}
+.searchBtn{
+    text-align: center;
+margin-left: 5%;
+}
+#head_account{
+    text-align: center;
+   cursor: pointer;
+}
+
+.sideNav{
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 1px;
+    border-right-style:solid ;
+    margin-top:20px;
+    padding-left: 10px;
+}
+.sideMenuItems{
+align-items: center;
+cursor: pointer;
+color: #000;
+
+font-size: 20px;
+}
+.nSl{
+    margin-left: 25px;
+}
+.iconS{
+margin-right: 10px;
+
+}
+.sideMenuItems:hover{
+color: #007bff;
+}
+#addBtn{
+    border-radius: 20px;
+}
+.addBtn{
+align-items: center;
+color: white;
+width: 130px;  
+padding-left: 10px;
+padding-right: 10px;
+}
+.nav-item{
+    margin-bottom: 10px;
+}
+.btnCompose{
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none !important;
+}
+
+
+.bodyFooter{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.msg{
+    padding-top: 5px;
+}
+#mailBoxController{
+    margin-right: 10px;
+    padding-top: 20px;
+}
+.mailboxRow{
+    margin-bottom: 10px;
+cursor: pointer;
+}
+.sizeInboxCard{
+   height: 24px;
+   padding-left: 10px;
+ 
+}
+
+.hoverDelete{
+    display:none   ;
+}
+.mailCard:hover .hoverDelete{
+ display: block;
+}
+.bodyMessage{
+    background-color:white;
+}
+#mailBoxInfoController{
+    padding-top: 40px;
+}
+.HeaderMsg{
+    padding-left: 80px;
+    padding-right:80px;
+}
+@media only screen and (max-width: 600px) {
+    .sizeInboxCard{
+        height: 70px;
+        padding-left: 10px;
+     }
+  }
+  .messageBody{
+    text-indent: 50px;
+  }
+  .bottomRow{
+ margin-bottom: 10px;
+  }
+  .titleType{
+      text-align: center;
+  }

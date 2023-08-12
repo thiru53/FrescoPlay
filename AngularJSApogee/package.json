@@ -1,0 +1,27 @@
+{
+  "name": "mail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --host 0.0.0.0 --disable-host-check | node server/server.js",
+    "test": "./node_modules/.bin/karma start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.6.10",
+    "angular-mocks": "^1.7.8",
+    "angular-route": "^1.7.8",
+    "express": "^4.17.1",
+    "karma": "^6.4.2",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-jasmine": "^2.0.1",
+    "karma-junit-reporter": "^1.2.0",
+    "mongodb": "^3.3.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
