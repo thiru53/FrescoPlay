@@ -6,7 +6,7 @@ import { Users } from '../models/users.model';
 import { Patient } from '../models/patient';
 import { Appointment } from '../models/appointment';
 import { ApiService } from './api.service';
-import { tap } from 'rxjs/operators';
+import { tap, map } from 'rxjs/operators';
 
 @Injectable()
 export class DataService {
@@ -30,7 +30,14 @@ export class DataService {
 
     // return false if user not authenticated 
 
-    return;
+    return this.api.checkLogin(username, password).pipe(map(user => {
+      if(user && user.userId){
+        localStorage.setItem('userId', user.userId + '');
+        this.isLogIn.next(true);
+        return true;
+      } else
+        return false;
+      }));
   }
 
   getAuthStatus(): Observable<boolean> {
