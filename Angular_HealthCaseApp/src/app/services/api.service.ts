@@ -15,16 +15,21 @@ export class ApiService {
   API_URL: String;
   AUTH_API_URL = '/auth/server/';
 
+  users: Users[] = [];
+    authUsers: {
+        id: number;
+        username: string;
+        password: string;
+    }[] = [];
+
   constructor(private http: HttpClient) {
     this.API_URL = 'api';
   }
 
   public checkLogin(username: string, password: string): Observable<Credentials> {
     // should return response from server
-
     // handle error 
-
-    return;
+     return this.http.post<Credentials>(this.API_URL + this.AUTH_API_URL, { username, password });
   }
 
   public getUserDetails(userId: number): Observable<Users> {

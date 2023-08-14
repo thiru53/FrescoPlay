@@ -15,6 +15,11 @@ export class DataService {
   isLogIn: BehaviorSubject<boolean>;
   constructor(private api: ApiService) {
     this.isLogIn = new BehaviorSubject<boolean>(false);
+    this.isLogIn.subscribe(data => {
+      if (!data) {
+        console.log('DataService-constructor-data : ', data);
+      }
+    });
   }
 
   authenticateUser(username: string, password: string): Observable<boolean> {

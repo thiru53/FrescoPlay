@@ -33,10 +33,20 @@ export class LoginComponent implements OnInit {
 	ngOnInit() {
 		// add necessary validators
 		
-		this.loginForm = new FormGroup({
-			userName: new FormControl(''),
-			password: new FormControl('')
-		});
+        this.loginForm = new FormGroup({
+            userName: new FormControl('', [
+                Validators.required,
+                Validators.minLength(3),
+                Validators.maxLength(20),
+                Validators.pattern(/^[a-zA-Z0-9]*$/)
+            ]),
+            password: new FormControl('', [
+                Validators.required,
+                Validators.minLength(8),
+                Validators.maxLength(20),
+                Validators.pattern(/^[a-zA-Z0-9!$%@#*?&£€]*$/)
+            ])
+        });
 	}
 
 	doLogin() {
@@ -44,8 +54,20 @@ export class LoginComponent implements OnInit {
 		// call authenticateUser method to perform login operation
 		// if success, redirect to profile page
 		// else display appropriate error message
-		   // reset the form
-
+		// reset the form
+		console.log("Inside doLogin");
+		this.dataService.authenticateUser(this.loginForm.get('userName').value, this.loginForm.get('password').value)
+		.subscribe(data => {
+			if (data) {
+				this.route.navigate(['/profile']);
+			} else {
+				this.isLoginFailed = true;
+				this.loginForm.reset();
+			}
+		}, err => {
+			console.log('Error during login :', err);
+			this.isLoginFailed = true;
+		});
 	}
 
 }
