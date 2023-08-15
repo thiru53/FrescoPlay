@@ -11,8 +11,12 @@ export class AuthGuardService implements CanActivate {
 
   canActivate(): boolean {
     // return true if authenticated else redirect to login page
-
-    return;
+    const id = localStorage.getItem('userId');
+    if (id) {
+      return true;
+    }
+    this.router.navigate(['/login']);
+    return false;
   }
 
 }
