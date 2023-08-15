@@ -29,15 +29,20 @@ export class DataService {
     // return true if user authenticated
 
     // return false if user not authenticated 
+    return this.api.checkLogin(username, password)
+      .pipe(
+        map(user => {
+          if (user && user.userId) {
+            console.log('Login Successfull for ', user.userId);
+            localStorage.setItem('userId', user.userId + '');
+            this.isLogIn.next(true);
+            return true;
+          } else {
+            return true;
+          }
+        })
+      );
 
-    return this.api.checkLogin(username, password).pipe(map(user => {
-      if(user && user.userId){
-        localStorage.setItem('userId', user.userId + '');
-        this.isLogIn.next(true);
-        return true;
-      } else
-        return false;
-      }));
   }
 
   getAuthStatus(): Observable<boolean> {
@@ -93,7 +98,7 @@ export class DataService {
 
     return;
   }
-  
+
   getDiseasesList(): Observable<any> {
 
     // should return response retrieved from ApiService
