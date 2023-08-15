@@ -30,15 +30,17 @@ export class ProfileComponent implements OnInit {
     // username should be disabled. it should not be edited
 
     this.editProfileForm = new FormGroup({
-      userName: new FormControl({ value: ''}),
-      mobile: new FormControl(''),
-      email: new FormControl(''),
-      location: new FormControl('')
+      userName: new FormControl({ value: '', disabled: true }, Validators.required),
+      mobile: new FormControl('', [Validators.minLength(10), Validators.maxLength(10)]),
+      email: new FormControl('', Validators.email),
+      location: new FormControl('', Validators.required)
     });
 
     // get login status from service
     // get userId from service and assign it to userId property
+    this.userId = this.dataService.getUserId();
     // get profile details and display it
+    this.getProfileDetails();
 
   }
 
@@ -63,6 +65,13 @@ export class ProfileComponent implements OnInit {
   getProfileDetails() {
 
     // retrieve user details from service using userId
+    console.log('UserProfile for id:',this.userId)
+    this.dataService.getUserDetails(this.userId) .subscribe(data => {
+      console.log('UserProfile:',data);
+      this.userDetails = data;
+    }, err => {
+      this.userDetails = new Users();
+    });
 
   }
   

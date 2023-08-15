@@ -58,7 +58,7 @@ export class DataService {
 
     // should return user details retrieved from api service
 
-    return;
+    return this.api.getUserDetails(userId);
   }
 
   updateProfile(userDetails): Observable<boolean> {
@@ -148,7 +148,10 @@ export class DataService {
 
     // retrieve 'userId' from localstorage
 
-    return;
+    const userId = parseInt(localStorage.getItem('userId'), 10);
+    if (!this.isLogIn.value)
+        return -1;
+    return userId ? userId : -1;
   }
 
 

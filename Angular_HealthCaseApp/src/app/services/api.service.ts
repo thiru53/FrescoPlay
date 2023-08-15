@@ -37,7 +37,7 @@ export class ApiService {
 
     // handle error 
 
-    return;
+    return this.http.get<Users>(this.API_URL + '/users/' + userId).pipe(catchError(this.handleError));
   }
 
   public updateDetails(userDetails: Users): Observable<Users> {
@@ -122,6 +122,7 @@ export class ApiService {
 
   private handleError(error: HttpErrorResponse) {
     // handle error
+    return Observable.throw(error);
   }
   
 }
