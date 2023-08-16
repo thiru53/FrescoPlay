@@ -47,32 +47,56 @@ export class ProfileComponent implements OnInit {
   changeMyProfile() {
 
     // if successfully changed the profile it should display new details hiding the form
+    this.dataService.updateProfile({
+      userId: this.userId,
+      username: this.editProfileForm.get('userName').value,
+      mobile: this.editProfileForm.get('mobile').value,
+      email: this.editProfileForm.get('email').value,
+      location: this.editProfileForm.get('location').value,
+    }).subscribe(data => {
+      if (data) {
+        this.discardEdit();
+        this.getProfileDetails();
+      } else {
+
+      }
+    }, err => {
+
+    });
 
   }
 
   editMyProfile() {
 
     // change editProfile property value appropriately
+    this.editProfile = true;
+    this.editProfileForm.setValue({
+      userName: this.userDetails.username,
+      email: this.userDetails.email,
+      location: this.userDetails.location,
+      mobile: this.userDetails.mobile
+    });
 
   }
 
   discardEdit() {
 
     // change editProfile property value appropriately
+    this.editProfile = false;
 
   }
 
   getProfileDetails() {
 
     // retrieve user details from service using userId
-    console.log('UserProfile for id:',this.userId)
-    this.dataService.getUserDetails(this.userId) .subscribe(data => {
-      console.log('UserProfile:',data);
+    console.log('UserProfile for id:', this.userId)
+    this.dataService.getUserDetails(this.userId).subscribe(data => {
+      console.log('UserProfile:', data);
       this.userDetails = data;
     }, err => {
       this.userDetails = new Users();
     });
 
   }
-  
+
 }

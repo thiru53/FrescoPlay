@@ -45,7 +45,7 @@ export class ApiService {
 
     // handle error 
 
-    return;
+    return this.http.put<Users>(this.API_URL + '/users/' + userDetails.userId, userDetails).pipe(catchError(this.handleError));
   }
 
   public registerPatient(patientDetails: any): Observable<any> {

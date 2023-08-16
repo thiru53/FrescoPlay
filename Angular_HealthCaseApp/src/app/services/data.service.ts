@@ -65,7 +65,8 @@ export class DataService {
 
     // should return the updated status according to the response from api service
 
-    return;
+    return this.api.updateDetails(userDetails).pipe(map(user => user ? true : false));
+    
   }
 
   registerPatient(patientDetails): Observable<any> {
