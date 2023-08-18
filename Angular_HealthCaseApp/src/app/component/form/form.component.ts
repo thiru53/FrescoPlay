@@ -4,6 +4,7 @@ import { DatePipe } from '@angular/common';
 import { Router } from '@angular/router';
 import { Patient } from '../../models/patient';
 import { DataService } from '../../services/data.service';
+import { fn } from '@angular/compiler/src/output/output_ast';
 // import * as alertify from 'alertify.js';
 
 @Component({
@@ -42,13 +43,13 @@ export class FormComponent implements OnInit {
 
   constructor( fb: FormBuilder,private datePipe: DatePipe,private route: Router, private dataService: DataService){
     this.complexForm = fb.group({
-      'firstName' : [''],
-      'lastName': [''],
-      'gender' : [null],
-      'dob' : [null],
-      'mobile' : [''],
-      'email' : [''],
-      'description' : ''
+      'firstName': ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]],
+      'lastName': ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]],
+      'gender': [null, Validators.required],
+      'dob': [null, Validators.required],
+      'mobile': ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10), Validators.pattern(/^\d{10,}$/)]],
+      'email': ['', [Validators.required, Validators.email]],
+      'description': ''
     })
   }
 
@@ -57,6 +58,12 @@ export class FormComponent implements OnInit {
     // assign new date object to reportedTime
     // should reister new patient using service
     // if added successfully should redirect to 'patientList' page
+    if(value){
+      var fname = value.get('firstName').value;
+      alert(fname);
+    }
+    alert("Form : "+value.firstName);
+    //this.dataService.registerPatient();
 
   }
 
