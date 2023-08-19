@@ -12,7 +12,7 @@
         </div>
 
         <!-- call submitForm method with all form values if form is valid -->
-        <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm)">
+        <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)">
 
           <div class="form-group">
             <label class="label-name">

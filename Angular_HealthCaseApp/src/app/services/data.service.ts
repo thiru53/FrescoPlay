@@ -76,7 +76,7 @@ export class DataService {
 
     // handle error 
 
-    return;
+    return this.api.registerPatient(patientDetails);
 
   }
 

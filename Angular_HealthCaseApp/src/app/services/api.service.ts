@@ -54,7 +54,7 @@ export class ApiService {
 
     // handle error 
 
-    return;
+    return this.http.post(`${this.API_URL}/patients/register`, patientDetails);
   }
 
   public getAllPatientsList(): Observable<any> {

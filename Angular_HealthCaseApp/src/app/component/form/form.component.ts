@@ -58,13 +58,28 @@ export class FormComponent implements OnInit {
     // assign new date object to reportedTime
     // should reister new patient using service
     // if added successfully should redirect to 'patientList' page
-    if(value){
-      var fname = value.get('firstName').value;
-      alert(fname);
-    }
-    alert("Form : "+value.firstName);
-    //this.dataService.registerPatient();
+  
+    const patient = populatePatient(value);
+    alert("patient : "+JSON.stringify(patient));
+    this.dataService.registerPatient(patient).subscribe(res => {
+      this.route.navigate(['patientList'])
+    }, err => {
+
+    })
+
 
   }
 
+}
+
+function populatePatient(value: any) : Patient {
+  const patient:Patient = new Patient();
+  patient.firstName = value['firstName'];
+  patient.lastName = value['lastName'];
+  patient.gender = value['gender'];
+  patient.dob = value['dob'];
+  patient.mobile = value['mobile'];
+  patient.email = value['email'];
+  patient.description = value['description'];
+  return patient;
 }
